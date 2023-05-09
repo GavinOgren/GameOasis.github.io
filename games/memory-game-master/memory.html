@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!-- Gavin Ogren
+            April 27, 2023 
+        A website where user can review, play and shop
+      code assisted: go to readme.txt file for more details -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="icon" href="/Images/favicon.png" type="image/x-icon">
+  <!-- Title -->
+  <title>Game Oasis: Shop - Game - Review</title>
+  <!-- Some BootStrap Stuff -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" />
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <meta charset="UTF-8" />
+  <title>Fruit Matcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="js/MemoryGame.js" type="text/javascript"></script>
+  <script src="js/Card.js" type="text/javascript"></script>
+  <link href="css/MemoryGame.css" type="text/css" rel="stylesheet" />
+</head>
+<!-- Links -->
+<header>
+  <div class="container" style="background-color: #F7F7F7">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img class="logo-img" src="/Images/favicon.png" alt="Game Oasis" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ms-auto">
+          <!-- Links to webistes -->
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/review.html">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/buy.html">Buy Game</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/browse_games.html">Browse Game</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<body>
+
+  <section id="memory--settings-modal" class="valign-table modal show">
+    <div class="valign-cell">
+      <form>
+        <h2 class="memory--settings-label">Difficulty level:</h2>
+        <select id="memory--settings-grid">
+          <option value="2x3">Easy</option>
+          <option value="3x4" selected>Medium</option>
+          <option value="4x5">Hard</option>
+          <option value="5x6">Don't do it!</option>
+        </select>
+        <input id="memory--settings-reset" type="submit" value="Start New Game" />
+      </form>
+    </div>
+  </section>
+  <section id="memory--end-game-modal" class="valign-table modal">
+    <div class="valign-cell">
+      <div class="wrapper">
+        <h2 id="memory--end-game-message"></h2>
+        <h3 id="memory--end-game-score"></h3>
+      </div>
+    </div>
+  </section>
+  <section id="memory--app-container">
+    <ul id="memory--cards">
+    </ul>
+  </section>
+  <section class="memory--menu-bar">
+    <div class="inner">
+      <div class="left">
+        <h1 class="memory--app-name">Fruit Matcher</h1>
+      </div>
+      <div class="right"><a href="#settings"><img id="memory--settings-icon" src="images/gear.png" /></a></div>
+    </div>
+  </section>
+  <script src="js/BrowserInterface.js" type="text/javascript"></script>
+  <footer class="footer">
+    <div class="container text-center">S
+      <p>&copy; 2023 Game Oasis. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- Some BootStrap Stuff -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

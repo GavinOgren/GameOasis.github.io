@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Gavin Ogren
+            April 27, 2023 
+        A website where user can review, play and shop -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" href="Images/favicon.png">
+    <!-- Title -->
+    <title>Game Oasis: Shop - Game - Review</title>
+    <!-- Some BootStrap Stuff -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" />
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <script>
+
+        const reviewForm = document.getElementById('review-form');
+        const reviewsContainer = document.getElementById('reviews-container');
+
+        // Listens for the submit button to be pressed. 
+        reviewForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const gameName = document.getElementById('game-name').value;
+            const reviewText = document.getElementById('review-text').value;
+
+            const review = document.createElement('div');
+            review.classList.add('review', 'new-review');
+
+            const gameNameElement = document.createElement('h3');
+            gameNameElement.textContent = gameName;
+
+            const reviewTextElement = document.createElement('p');
+            reviewTextElement.textContent = reviewText;
+
+            const editButton = document.createElement('button');
+            editButton.textContent = 'Edit';
+            editButton.addEventListener('click', () => {
+                const newGameName = prompt('Enter new game name:', gameName);
+                const newReviewText = prompt('Enter new review:', reviewText);
+
+                gameNameElement.textContent = newGameName;
+                reviewTextElement.textContent = newReviewText;
+            });
+
+            // Delwrw option
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Delete';
+            deleteButton.addEventListener('click', () => {
+                review.remove();
+            });
+            // Adds on top of child
+
+            review.appendChild(gameNameElement);
+            review.appendChild(reviewTextElement);
+            review.appendChild(editButton);
+            review.appendChild(deleteButton);
+
+            reviewsContainer.appendChild(review);
+
+            reviewForm.reset();
+
+            setTimeout(() => {
+                review.classList.remove('new-review');
+            }, 500);
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container" style="background-color: #F7F7F7">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img class="logo-img" src="Images/logo.png" alt="Game Oasis" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Links to webistes -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="review.html">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buy.html">Buy Game</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="browse_games.html">Browse Game</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- YOu can make a review -->
+        <div class="review-section">
+            <h2>Game Reviews</h2>
+            <form id="review-form">
+                <label for="game-name">Game Name:</label>
+                <input type="text" id="game-name" name="game-name" required>
+                <label for="review-text">Review:</label>
+                <textarea id="review-text" name="review-text" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+            <div id="reviews-container"></div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2023 Game Oasis. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Some BootStrap Stuff -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+
+</html>

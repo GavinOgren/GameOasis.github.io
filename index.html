@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Gavin Ogren
+            April 27, 2023 
+        A website where user can review, play and shop -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" href="Images/favicon.png" type="image/x-icon">
+    <!-- Title -->
+    <title>Game Oasis: Shop - Game - Review</title>
+    <!-- Some BootStrap Stuff -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" />
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container" style="background-color: #F7F7F7">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img class="logo-img" src="Images/logo.png" alt="Game Oasis" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Links to webistes -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="review.html">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buy.html">Buy Game</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="browse_games.html">Browse Game</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Welcome to Game Oasis</h1>
+                        <p>Discover the latest and greatest video games, write reviews, and connect with other gamers.
+                        </p>
+                        <a href="buy.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="hero-image">
+                            <img src="Images/hero.png" style="margin: 2%;" alt="Video Game Controller"
+                                class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Recoommended Games will be shown here -->
+        <section class="recommended">
+            <div class="container">
+                <h2>Recommended Games</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="Images/tic-tac-toe_ad.png" class="card-img-top" alt="Game 1" />
+                            <div class="card-body">
+                                <h5 class="card-title">Tic-Tac-Toe</h5>
+                                <p class="card-text">
+                                    Tic Tac Toe is a simple two-player game played on a 3x3 grid,
+                                    where players take turns marking X or O to win three in a row.
+                                    <br>
+                                    <br>
+                                    <br>
+                                </p>
+                                <a href="games/tic_tac_toe.html" class="btn btn-primary">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="Images/hangman.png" class="card-img-top" alt="Game 2" />
+                            <div class="card-body">
+                                <h5 class="card-title">Hangman</h5>
+                                <p> Hangman is a word-guessing game where one player thinks of a word,
+                                    and the other player tries to guess it by suggesting letters.
+                                    Incorrect guesses result in drawing parts of a stick figure until completion.
+                                </p>
+                                <br>
+                                <a href="games/Vanilla-Javascript-Hangman-Game-master/hangman.html"
+                                    class="btn btn-primary">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="Images/Memory.png" class="card-img-top" alt="Game 2" />
+                            <div class="card-body">
+                                <h5 class="card-title">Memory</h5>
+                                <p> Each player takes turns flipping over two cards. If they match, the player keeps
+                                    them and continues.
+                                    If they don't match, the cards are flipped back over, and it's the next player's
+                                    turn.
+                                    The game ends when all cards are matched, and the player with the most pairs wins.
+                                </p>
+                                <a href="games/memory-game-master/memory.html" class="btn btn-primary">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Description of What Game Oasis Is -->
+        <div class="flex-container">
+            <div class="flex-item">
+                <h2>Introducing GameOasis</h2>
+                <p>Your ultimate destination for all things gaming! GameOasis is a dynamic and immersive gaming website
+                    that caters to the needs of passionate gamers, offering a seamless fusion of shopping, gameplay, and
+                    game reviews.</p>
+            </div>
+            <div class="flex-item">
+                <h2>Welcome to GameOasis</h2>
+                <p>With its seamless integration of shopping, gameplay, and game reviews, GameOasis is the perfect hub
+                    for gamers to explore, connect, and enjoy the ever-evolving world of gaming. Embark on an
+                    exhilarating journey with us and experience the ultimate gaming oasis at your fingertips. Welcome to
+                    GameOasis, where gaming dreams become reality!</p>
+                <h2>Explore a Vast Gaming Collection</h2>
+                <p>One of the key features of GameOasis is its extensive online store, where gamers can browse and
+                    purchase their favorite games. Whether you're a fan of action-packed adventures, mind-bending
+                    puzzles, immersive RPGs, or heart-pounding shooters, GameOasis has an impressive collection of
+                    titles to cater to every taste and preference. Our store is regularly updated with the latest
+                    releases, ensuring you stay at the forefront of the gaming world.</p>
+            </div>
+            <div class="flex-item">
+                <h2>Dive into an Immersive Gaming Platform</h2>
+                <p>But GameOasis isn't just about buying games; it's about experiencing them too! Step into our
+                    immersive gaming platform, where you can dive into a virtual realm of excitement and challenge. With
+                    a wide variety of genres and gameplay options, you'll find something to suit your mood and skill
+                    level. Connect with friends, join multiplayer battles, and explore captivating virtual worlds, all
+                    within the confines of GameOasis.</p>
+            </div>
+            <div class="flex-item">
+                <h2>Make Informed Choices with Game Reviews</h2>
+                <p>GameOasis also recognizes the importance of informed decision-making, which is why we provide a
+                    dedicated space for game reviews. Our passionate community of gamers regularly shares their
+                    thoughts, opinions, and insights on the latest releases, helping you make well-informed choices
+                    before diving into new gaming adventures. Whether you're seeking detailed critiques or simply
+                    looking for recommendations, our game reviews section will be your go-to resource.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </main>
+    <br>
+    <br>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2023 Game Oasis. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Some BootStrap Stuff -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <!-- The Menu -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

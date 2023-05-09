@@ -1,0 +1,331 @@
+/* Gavin Ogren
+4/27/2023 */
+
+/* All Pages */
+/* Classes */
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.color-container {
+    background-color: orange;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    /* Set height for the footer */
+    background-color: #333;
+    color: #fff;
+}
+
+.button[type="submit"] {
+    background-color: #0062c6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px;
+    cursor: pointer;
+    /* add decorations below */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.button[type="submit"]:hover {
+    background-color: #005fa3;
+    /* add decorations below */
+    transform: scale(1.1);
+}
+
+
+/* Home Page */
+
+/* Hero */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    /* set the height of the container to match the height of the image */
+}
+
+.hero-image img {
+    max-width: 100%;
+    /* ensure the image does not exceed the container width */
+    max-height: 100%;
+    /* ensure the image does not exceed the container height */
+}
+
+/* Descition of Site */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    border: #005fa3 10px solid;
+    padding: 20px;
+    margin: 20px 20% 0px 20%;
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+
+.flex-item {
+    margin-bottom: 20px;
+}
+
+/* Login Page */
+/* Classes */
+.login-body {
+    background-color: #fff;
+    background-image: url("Images/login-background.png");
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2em;
+
+    /* Box Outline   */
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+
+}
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    margin: 10px;
+}
+
+
+
+.login-link {
+    text-decoration: none;
+}
+
+/* Review Page */
+
+.review-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.review-section h2 {
+    text-align: center;
+}
+
+#review-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#review-form input,
+#review-form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#review-form button {
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reviews-container {
+    margin-top: 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    animation: fade-in 0.5s ease-in-out;
+}
+
+.review button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Keyframs for trasnlation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.review.new-review {
+    animation: slide-up 0.5s ease-in-out;
+}
+
+/* Buy Games */
+.hero {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-item {
+    text-align: center;
+    width: 30%;
+}
+
+.hero-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card {
+    padding: 50px 0;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-item {
+    text-align: center;
+}
+
+.card-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Browse Game WebPage */
+
+/* Reset default browser styles */
+
+
+/* Reset default browser styles */
+
+
+/* Set body background color and font */
+.section-games {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Style the game container */
+.container-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Style the game card */
+.game {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.game img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.game h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.game p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+/* Add media query for mobile devices */
+@media (max-width: 767px) {
+    .login-body {
+        background-image: none;
+    }
+}
+
+/* Game Library Page */
+#buy-more-games {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
